@@ -45,7 +45,7 @@ public class TestVersionInfo {
     assertTrue(VersionInfo.compareVersion("0.98.12.1", "0.98.16.1") < 0);
     assertTrue(VersionInfo.compareVersion("0.98.16.1", "1.0.1.1") < 0);
     assertTrue(VersionInfo.compareVersion("1.0.1.1", "1.1.0.1") < 0);
-    assertTrue(VersionInfo.compareVersion("2.0..", "2.0.0") > 0);
+    assertTrue(VersionInfo.compareVersion("2.0..1", "2.0.0") > 0);
     assertTrue(VersionInfo.compareVersion("2.0.0", "2.0.0") == 0);
     assertTrue(VersionInfo.compareVersion("1.99.14", "2.0.0-alpha-1") < 0);
     assertTrue(VersionInfo.compareVersion("2.0.0-alpha-1", "2.0.0-beta-3") < 0);
